@@ -48,7 +48,7 @@ dependencies {
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
-    implementation 'com.squareup.retrofit2:convert-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     //room
     implementation "androidx.room:room-runtime:2.2.2"
     annotationProcessor "androidx.room:room-compiler:2.2.2" // use kapt for Kotlin
@@ -59,7 +59,9 @@ dependencies {
     //swipe refresh layout
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     //circle image view
-    implementation 'de.hdodenof:circleimageview:3.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.8'
 
 
 }
