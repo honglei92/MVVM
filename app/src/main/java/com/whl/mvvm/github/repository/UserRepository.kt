@@ -24,7 +24,7 @@ class UserRepository {
         return userDao?.getUserByName(name)
     }
 
-    private fun refresh(name: String) {
+    fun refresh(name: String) {
         api.getUser(name).enqueue(object : Callback<User> {
             override fun onResponse(call: Call<User>, response: Response<User>) {
                 if (response.body() != null) {

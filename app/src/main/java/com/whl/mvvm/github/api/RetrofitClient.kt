@@ -19,10 +19,9 @@ class RetrofitClient {
         }
     }
 
-    private fun RetrofitClient(): RetrofitClient? {
+    private fun RetrofitClient() {
         retrofit = Retrofit.Builder().baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create()).build()
-        return retrofitClient;
     }
 
     fun getApi(): Api {

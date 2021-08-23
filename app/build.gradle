@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -52,6 +53,7 @@ dependencies {
     //room
     implementation "androidx.room:room-runtime:2.2.2"
     annotationProcessor "androidx.room:room-compiler:2.2.2" // use kapt for Kotlin
+    kapt 'androidx.room:room-compiler:2.2.2'
     // glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     //lifecycle
