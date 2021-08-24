@@ -19,7 +19,7 @@ class RetrofitClient {
         }
     }
 
-    private fun RetrofitClient() {
+    init {
         retrofit = Retrofit.Builder().baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create()).build()
     }
