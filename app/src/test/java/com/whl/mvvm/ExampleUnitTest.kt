@@ -14,4 +14,13 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun liucheng() {
+        listOf("1", "2", "3").forEach {
+            println("aa $it")
+            return@forEach
+        }
+        println("finish")
+    }
 }

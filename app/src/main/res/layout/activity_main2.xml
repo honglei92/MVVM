@@ -22,7 +22,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@{userViewModel.user.name}" />
+            android:text="@{userViewModel.user.bio}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@{userViewModel.user.blog}" />
     </LinearLayout>
 
 </layout>

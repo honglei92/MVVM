@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface Api {
-    @GET("user/{userId}")
+    @GET("users/{userId}")
     fun getUser(@Path("userId") userId: String): Call<User>
 }

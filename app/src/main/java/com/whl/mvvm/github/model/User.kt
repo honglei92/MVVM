@@ -11,12 +11,12 @@ class User {
     @ColumnInfo(name = "id", typeAffinity = ColumnInfo.INTEGER)
     var id: Int = 0
 
-    @ColumnInfo(name = "name", typeAffinity = ColumnInfo.TEXT)
-    var name: String = ""
+    @ColumnInfo(name = "login", typeAffinity = ColumnInfo.TEXT)
+    var login: String = "login"
 
     @ColumnInfo(name = "avatar", typeAffinity = ColumnInfo.TEXT)
     @SerializedName("avatar_url")
-    var avatar: String = "";
+    var avatar: String = "avatar";
 
     @ColumnInfo(name = "followers", typeAffinity = ColumnInfo.INTEGER)
     var followers: Int = 0
@@ -27,8 +27,8 @@ class User {
     @ColumnInfo(name = "blog", typeAffinity = ColumnInfo.TEXT)
     var blog: String = ""
 
-    @ColumnInfo(name = "company", typeAffinity = ColumnInfo.TEXT)
-    var company: String = ""
+//    @ColumnInfo(name = "company", typeAffinity = ColumnInfo.TEXT)
+//    var company: String = "company"
 
     @ColumnInfo(name = "bio", typeAffinity = ColumnInfo.TEXT)
     var bio: String = ""
@@ -42,23 +42,23 @@ class User {
 
     fun User(
         id: Int,
-        name: String,
+        login: String,
         avatar: String,
         followers: Int,
         following: Int,
         blog: String,
-        company: String,
+//        company: String,
         bio: String,
         location: String,
         htmlUrl: String
     ) {
         this.id = id
-        this.name = name
+        this.login = login
         this.avatar = avatar
         this.followers = followers
         this.following = following
         this.blog = blog
-        this.company = company
+//        this.company = company
         this.bio = bio
         this.location = location
         this.htmlUrl = htmlUrl

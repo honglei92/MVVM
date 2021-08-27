@@ -8,7 +8,7 @@ class RetrofitClient {
     lateinit var retrofit: Retrofit
 
     companion object {
-        private val BASE_URL: String = "https://github.com/"
+        private val BASE_URL: String = "https://api.github.com/"
         private var retrofitClient: RetrofitClient? = null
 
         fun getInstance(): RetrofitClient? {

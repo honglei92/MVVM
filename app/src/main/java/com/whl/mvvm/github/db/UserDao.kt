@@ -12,6 +12,6 @@ interface UserDao {
     @Delete
     fun deleteStudent(user: User)
 
-    @Query("SELECT * FROM user WHERE name = :name")
-    fun getUserByName(name: String): LiveData<User>
+    @Query("SELECT * FROM user WHERE login = :login")
+    fun getUserByName(login: String): LiveData<User>
 }
